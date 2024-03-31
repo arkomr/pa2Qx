@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
+  <head>
+      <script>
+         window.onload = function() {
+            var iframe = document.getElementById("myiframe");
+            iframe.width = iframe.contentWindow.document.body.scrollWidth;
+            iframe.height = iframe.contentWindow.document.body.scrollHeight;
+         }
+      </script>
+   </head>
 <body>
-<iframe src="https://poc-a.kd3.dev/requestslist" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" height="100%" width="100%"></iframe>
+<iframe id="myiframe" src="https://poc-a.kd3.dev/requestslist" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" height="100%" width="100%"></iframe>
 </body>
 </html>
 
